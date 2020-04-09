@@ -1,0 +1,16 @@
+html,
+body {
+    font-family: serif;
+}
+
+body {
+    margin: 20px;
+    color: #101010
+}
+
+.city {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    border: 1px solid purple;
+}
