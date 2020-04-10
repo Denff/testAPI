@@ -1,16 +1,81 @@
 html,
 body {
-    font-family: serif;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #101010;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    font-size: 16px;
 }
 
-body {
-    margin: 20px;
-    color: #101010
+* {
+    box-sizing: border-box;
+}
+
+.city-and-flag {
+    margin-top: 1rem;
 }
 
 .city {
     display: inline-block;
     width: auto;
     height: 40px;
-    border: 1px solid purple;
+    margin-right: 10px;
+    color: #1976D2;
+    font-weight: 700;
+
+    font-size: 24px;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #f8f8f8;
+    font-weight: 700;
+}
+
+.header__inner,
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    flex: 1;
+    background-color: #f0f0f0
+}
+
+.footer {
+    height: 180px;
+    color: #f8f8f8;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+}
+
+.enter-city,
+.weather-city {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    height: 270px;
+}
+
+.weather {
+    font-size: 24px;
+}
+
+.weather-city div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.weather-descr {
+    font-style: italic;
 }
